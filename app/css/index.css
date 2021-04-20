@@ -1,0 +1,178 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+
+body
+{
+    display: grid;
+    grid-template-rows: 23px 1fr;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+a{ user-select: none; text-decoration: none; -webkit-user-drag: none;}
+
+.titlebar
+{
+    width: 100%;
+    height: 23px !important;
+    background-color: #333;
+    text-align: right;
+    -webkit-app-region: drag;
+}
+
+.titlebar button
+{
+    width: 23px;
+    height: 23px;
+    background-color: red;
+    color: #FFF;
+    font-weight: bold;
+    border:0px solid transparent;
+    outline: none;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+.titlebar button:hover
+{
+    background-color: rgb(219, 49, 49);
+}
+
+.titlebar button:active
+{
+    background-color: rgb(153, 36, 36);
+}
+
+.document
+{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.leftcontent
+{
+    background-color: rgb(41, 46, 77);
+    padding: 0.3rem;
+    user-select: none;
+}
+
+.leftcontent h3
+{
+    color: #FFF;
+    text-align: center;
+}
+
+.leftcontent ul li
+{
+    padding: 6px;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    list-style: none;
+}
+
+.leftcontent ul li a
+{
+    color: #FFF;
+}
+
+.leftcontent ul li:hover
+{
+    background-color: rgb(45, 48, 70);
+}
+
+.active
+{
+    background-color: rgb(45, 48, 70);
+}
+
+.rightcontent
+{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.center-content
+{
+    justify-self: center;
+    align-self: center;
+    width: 400px;
+}
+
+.console
+{
+    width: 100%;
+    resize: none;
+    padding: 8px;
+    height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: green;
+}
+
+.consolecontrols
+{
+    width: 100%;
+}
+
+.consoleinput
+{
+    padding: 6px;
+    border:1px solid #333;
+    border-radius: 3px;
+    width: 335px;
+}
+
+.consolebutton
+{
+    padding: 6px;
+    border:1px solid green;
+    border-radius: 3px;
+    color:#FFF;
+    background-color: green;
+    width: 60px;
+}
+
+.config-form
+{
+    padding: 16px;
+}
+
+.config-form input
+{
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border:1px solid #333;
+    padding: 6px;
+}
+
+.config-form button
+{
+    width: 100%;
+    color: #FFF;
+    background-color: green;
+    border-radius: 3px;
+    border:1px solid green;
+    padding: 6px;
+    outline: none;
+}
+
+.config-form button:hover
+{
+    background-color: rgb(15, 143, 15);
+}
+
+.config-form button:active
+{
+    background-color: rgb(15, 104, 15);
+}

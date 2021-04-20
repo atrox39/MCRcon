@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title></title>
+</head>
+<body>
+    <div class="titlebar">
+        <button id="btnClose">X</button>
+    </div>
+    <div class="document">
+        <div class="leftcontent">
+            <h3>RCON Client</h3>
+            <ul>
+                <li class="active"><a href="index.html">Consola</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+            </ul>
+        </div>
+        <div class="rightcontent">
+            <div class="center-content">
+                <h4 style="text-align: center;">Consola</h4>
+                <textarea class="console" id="consola" readonly></textarea><br>
+                <div class="consolecontrols">
+                    <input type="text" name="consoleinput" class="consoleinput" id="tbxConsola">
+                    <button class="consolebutton" id="btnConsola">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/titlebar.js"></script>
+</body>
+</html>
